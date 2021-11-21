@@ -16,8 +16,8 @@ module.exports = (app) => {
 		profile.location = update.location;
 		profile.website = update.website;
 		profile.dateOfBirth = update.dateOfBirth;
-		res.json(profile)
-		console.log("body", profile);
+		res.send(profile)
+		console.log("body", res.body);
 	}
 	app.put("/api/profile", updateCurrentProfile);
 
