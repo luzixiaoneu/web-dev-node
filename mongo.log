@@ -1,0 +1,580 @@
+ db.tweets.find()
+{ "_id" : "123", "topic" : "Web Development", "userName" : "ReactJS", "verified" : false, "handle" : "ReactJS", "time" : "2h", "title" : "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "video" : "unKvMC3Y1kI" }, "logo-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "avatar-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "stats" : { "commen
+ts" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "567", "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ci
+llum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 34
+5 } }
+{ "_id" : "234", "topic" : "Space", "userName" : "Scott Manley", "verified" : true, "handle" : "DJSnM", "published-date" : "2020-12-10", "time" : "1 day", "title" : "JavaScript is programming language that can run on browsers as well as desktops", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
+xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "logo-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "avatar-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "tweets" :
+ "123K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "345", "topic" : "Web Development", "userName" : "jQuery", "verified" : false, "handle" : "jQuery", "title" : "jQuery", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupta
+te velit esse cillum dolore eu fugiat nulla pariatur.", "time" : "last week", "logo-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "avatar-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "tweets" : "122K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "456", "topic" : "Web Development", "userName" : "NodeJS", "verified" : true, "handle" : "NodeJS", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate veli
+t esse cillum dolore eu fugiat nulla pariatur.", "time" : "last month", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.find()
+{ "_id" : "123", "topic" : "Web Development", "userName" : "ReactJS", "verified" : false, "handle" : "ReactJS", "time" : "2h", "title" : "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "video" : "unKvMC3Y1kI" }, "logo-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "avatar-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "stats" : { "commen
+ts" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "567", "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ci
+llum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 34
+5 } }
+{ "_id" : "234", "topic" : "Space", "userName" : "Scott Manley", "verified" : true, "handle" : "DJSnM", "published-date" : "2020-12-10", "time" : "1 day", "title" : "JavaScript is programming language that can run on browsers as well as desktops", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
+xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "logo-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "avatar-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "tweets" :
+ "123K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "345", "topic" : "Web Development", "userName" : "jQuery", "verified" : false, "handle" : "jQuery", "title" : "jQuery", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupta
+te velit esse cillum dolore eu fugiat nulla pariatur.", "time" : "last week", "logo-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "avatar-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "tweets" : "122K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "456", "topic" : "Web Development", "userName" : "NodeJS", "verified" : true, "handle" : "NodeJS", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate veli
+t esse cillum dolore eu fugiat nulla pariatur.", "time" : "last month", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.find()
+{ "_id" : "123", "topic" : "Web Development", "userName" : "ReactJS", "verified" : false, "handle" : "ReactJS", "time" : "2h", "title" : "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "video" : "unKvMC3Y1kI" }, "logo-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "avatar-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "stats" : { "commen
+ts" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "567", "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ci
+llum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 34
+5 } }
+{ "_id" : "234", "topic" : "Space", "userName" : "Scott Manley", "verified" : true, "handle" : "DJSnM", "published-date" : "2020-12-10", "time" : "1 day", "title" : "JavaScript is programming language that can run on browsers as well as desktops", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
+xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "logo-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "avatar-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "tweets" :
+ "123K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "345", "topic" : "Web Development", "userName" : "jQuery", "verified" : false, "handle" : "jQuery", "title" : "jQuery", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupta
+te velit esse cillum dolore eu fugiat nulla pariatur.", "time" : "last week", "logo-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "avatar-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "tweets" : "122K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "456", "topic" : "Web Development", "userName" : "NodeJS", "verified" : true, "handle" : "NodeJS", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate veli
+t esse cillum dolore eu fugiat nulla pariatur.", "time" : "last month", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : ObjectId("61a2f5ea303ec180b6f1da4c"), "tweet" : "2312312313123321", "__v" : 0 }
+> db.tweets.find()
+{ "_id" : "123", "topic" : "Web Development", "userName" : "ReactJS", "verified" : false, "handle" : "ReactJS", "time" : "2h", "title" : "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "video" : "unKvMC3Y1kI" }, "logo-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "avatar-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "stats" : { "commen
+ts" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "567", "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ci
+llum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 34
+5 } }
+{ "_id" : "234", "topic" : "Space", "userName" : "Scott Manley", "verified" : true, "handle" : "DJSnM", "published-date" : "2020-12-10", "time" : "1 day", "title" : "JavaScript is programming language that can run on browsers as well as desktops", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
+xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "logo-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "avatar-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "tweets" :
+ "123K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "345", "topic" : "Web Development", "userName" : "jQuery", "verified" : false, "handle" : "jQuery", "title" : "jQuery", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupta
+te velit esse cillum dolore eu fugiat nulla pariatur.", "time" : "last week", "logo-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "avatar-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "tweets" : "122K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "456", "topic" : "Web Development", "userName" : "NodeJS", "verified" : true, "handle" : "NodeJS", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate veli
+t esse cillum dolore eu fugiat nulla pariatur.", "time" : "last month", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : ObjectId("61a2f5ea303ec180b6f1da4c"), "tweet" : "2312312313123321", "__v" : 0 }
+> db.tweets.find()
+{ "_id" : "123", "topic" : "Web Development", "userName" : "ReactJS", "verified" : false, "handle" : "ReactJS", "time" : "2h", "title" : "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "video" : "unKvMC3Y1kI" }, "logo-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "avatar-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "stats" : { "commen
+ts" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "567", "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ci
+llum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 34
+5 } }
+{ "_id" : "234", "topic" : "Space", "userName" : "Scott Manley", "verified" : true, "handle" : "DJSnM", "published-date" : "2020-12-10", "time" : "1 day", "title" : "JavaScript is programming language that can run on browsers as well as desktops", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
+xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "logo-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "avatar-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "tweets" :
+ "123K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "345", "topic" : "Web Development", "userName" : "jQuery", "verified" : false, "handle" : "jQuery", "title" : "jQuery", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupta
+te velit esse cillum dolore eu fugiat nulla pariatur.", "time" : "last week", "logo-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "avatar-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "tweets" : "122K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "456", "topic" : "Web Development", "userName" : "NodeJS", "verified" : true, "handle" : "NodeJS", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate veli
+t esse cillum dolore eu fugiat nulla pariatur.", "time" : "last month", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : ObjectId("61a2f5ea303ec180b6f1da4c"), "tweet" : "2312312313123321", "__v" : 0 }
+> ^C
+bye
+
+C:\Users\luzix\web-dev-node>mongo
+MongoDB shell version v5.0.5-rc0
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("12342d0d-1054-4c56-aa6e-556e1c6aa079") }
+MongoDB server version: 5.0.5-rc0
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-11-25T14:24:12.082-05:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> db.tweets.find()
+> use webdev
+switched to db webdev
+> db.tweets.find()
+{ "_id" : "123", "topic" : "Web Development", "userName" : "ReactJS", "verified" : false, "handle" : "ReactJS", "time" : "2h", "title" : "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "video" : "unKvMC3Y1kI" }, "logo-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "avatar-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "stats" : { "commen
+ts" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "567", "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ci
+llum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 34
+5 } }
+{ "_id" : "234", "topic" : "Space", "userName" : "Scott Manley", "verified" : true, "handle" : "DJSnM", "published-date" : "2020-12-10", "time" : "1 day", "title" : "JavaScript is programming language that can run on browsers as well as desktops", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
+xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "logo-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "avatar-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "tweets" :
+ "123K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "345", "topic" : "Web Development", "userName" : "jQuery", "verified" : false, "handle" : "jQuery", "title" : "jQuery", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupta
+te velit esse cillum dolore eu fugiat nulla pariatur.", "time" : "last week", "logo-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "avatar-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "tweets" : "122K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "456", "topic" : "Web Development", "userName" : "NodeJS", "verified" : true, "handle" : "NodeJS", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate veli
+t esse cillum dolore eu fugiat nulla pariatur.", "time" : "last month", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : ObjectId("61a2f8cd11d902fcc5352f6c"), "tweet" : "12314231", "__v" : 0 }
+> db.tweets.find()
+{ "_id" : "123", "topic" : "Web Development", "userName" : "ReactJS", "verified" : false, "handle" : "ReactJS", "time" : "2h", "title" : "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "video" : "unKvMC3Y1kI" }, "logo-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "avatar-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "stats" : { "commen
+ts" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "567", "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ci
+llum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 34
+5 } }
+{ "_id" : "234", "topic" : "Space", "userName" : "Scott Manley", "verified" : true, "handle" : "DJSnM", "published-date" : "2020-12-10", "time" : "1 day", "title" : "JavaScript is programming language that can run on browsers as well as desktops", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
+xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "logo-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "avatar-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "tweets" :
+ "123K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "345", "topic" : "Web Development", "userName" : "jQuery", "verified" : false, "handle" : "jQuery", "title" : "jQuery", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupta
+te velit esse cillum dolore eu fugiat nulla pariatur.", "time" : "last week", "logo-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "avatar-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "tweets" : "122K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "456", "topic" : "Web Development", "userName" : "NodeJS", "verified" : true, "handle" : "NodeJS", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate veli
+t esse cillum dolore eu fugiat nulla pariatur.", "time" : "last month", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : ObjectId("61a308defcc6f8332ccb5d79"), "tweet" : "123145213132", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "__v" : 0 }
+{ "_id" : ObjectId("61a309a1ea227dfadf3d0c77"), "tweet" : "43123131", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "__v" : 0 }
+> db.tweets.insert({     "_id": ObjectId("66666666"),     "topic": "Web Development",     "userName": "ReactJS",     "verified": false,     "handle": "ReactJS",     "time": "2h",     "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+ et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "video": "unKvMC3Y1kI"     },     "logo-image": "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png",     "avatar-image": "https://cdn.ico
+nscout.com/icon/free/png-256/react-1543566-1306069.png",     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   }
+... )
+Error: invalid object id: length :
+@(shell):1:31
+> db.tweets.insert({     "_id": ObjectId("61a309a1ea227dfadf3d0c66"),     "topic": "Web Development",     "userName": "ReactJS",     "verified": false,     "handle": "ReactJS",     "time": "2h",     "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci
+didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "video": "unKvMC3Y1kI"     },     "logo-image": "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png",     "avatar-image":
+"https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png",     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   } )
+WriteResult({ "nInserted" : 1 })
+> use webdev
+switched to db webdev
+> db.tweets.insert({     "_id": "61a309a1ea227dfadf3d0c11",     "topic": "Web Development",     "userName": "NodeJS",     "verified": true,     "handle": "NodeJS",     "title": "",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq
+uat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "time": "last month",     "logo-image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",     "avatar-image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",     "tweets": "120K",     "stats": {
+       "comments": 123,       "retweets": 234,       "likes": 345     }   })
+WriteResult({ "nInserted" : 1 })
+> db.tweets.insert({     "_id": "61a309a1ea227dfadf3d0c22",     "topic": "Web Development",     "userName": "jQuery",     "verified": false,     "handle": "jQuery",     "title": "jQuery",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "time": "last week",     "logo-image": "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png",     "avatar-image": "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png",     "tweets": "122K",     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   })
+WriteResult({ "nInserted" : 1 })
+> db.tweets.insert({     "_id": "61a309a1ea227dfadf3d0c32",     "topic": "Space",     "userName": "SpaceX",     "verified": false,     "handle": "spacex",     "title": "",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+ aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "image": "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"     },     "time": "last month",     "logo-image": "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg",     "avatar-image": "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg
+",     "tweets": "120K",     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   } )
+WriteResult({ "nInserted" : 1 })
+> db.tweets.find()^C
+bye
+
+C:\Users\luzix\web-dev-node>mongo
+MongoDB shell version v5.0.5-rc0
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("b45ac64a-49f9-4209-9c86-56cecc84017d") }
+MongoDB server version: 5.0.5-rc0
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-11-25T14:24:12.082-05:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> use webdev
+switched to db webdev
+> db.tweets.find()
+{ "_id" : "123", "topic" : "Web Development", "userName" : "ReactJS", "verified" : false, "handle" : "ReactJS", "time" : "2h", "title" : "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos
+trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "video" : "unKvMC3Y1kI" }, "logo-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "avatar-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "stats" : { "commen
+ts" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "567", "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ci
+llum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 34
+5 } }
+{ "_id" : "234", "topic" : "Space", "userName" : "Scott Manley", "verified" : true, "handle" : "DJSnM", "published-date" : "2020-12-10", "time" : "1 day", "title" : "JavaScript is programming language that can run on browsers as well as desktops", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
+xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "logo-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "avatar-image" : "https://yt3.ggpht.com/ytc/AKedOLSmW1ncKs00TT7Efx31fgXPgh1NYNaK9eQIrzr91g=s900-c-k-c0x00ffffff-no-rj", "tweets" :
+ "123K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "345", "topic" : "Web Development", "userName" : "jQuery", "verified" : false, "handle" : "jQuery", "title" : "jQuery", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupta
+te velit esse cillum dolore eu fugiat nulla pariatur.", "time" : "last week", "logo-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "avatar-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "tweets" : "122K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "456", "topic" : "Web Development", "userName" : "NodeJS", "verified" : true, "handle" : "NodeJS", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate veli
+t esse cillum dolore eu fugiat nulla pariatur.", "time" : "last month", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : ObjectId("61a309a1ea227dfadf3d0c66"), "topic" : "Web Development", "userName" : "ReactJS", "verified" : false, "handle" : "ReactJS", "time" : "2h", "title" : "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+ enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : {  }, "logo-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "avatar-image" : "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png", "stats" : {
+ "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "61a309a1ea227dfadf3d0c11", "topic" : "Web Development", "userName" : "NodeJS", "verified" : true, "handle" : "NodeJS", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehende
+rit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "time" : "last month", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "61a309a1ea227dfadf3d0c22", "topic" : "Web Development", "userName" : "jQuery", "verified" : false, "handle" : "jQuery", "title" : "jQuery", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep
+rehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "time" : "last week", "logo-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "avatar-image" : "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png", "tweets" : "122K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+{ "_id" : "61a309a1ea227dfadf3d0c32", "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vo
+luptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123, "retweets
+" : 234, "likes" : 345 } }
+> db.tweets.drop()
+true
+> use webdev
+switched to db webdev
+> db.tweets.insert({ "topic": "Space",     "userName": "SpaceX",     "verified": false,     "handle": "spacex",     "title": "",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup
+tate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "image": "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"     },     "time": "last month",     "logo-image": "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg",     "avatar-image": "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg",     "tweets": "120K",     "stats": {
+   "comments": 123,       "retweets": 234,       "likes": 345     }   } )
+WriteResult({ "nInserted" : 1 })
+> db.tweets.insert({ "topic": "Space",     "userName": "SpaceX",     "verified": false,     "handle": "spacex",     "title": "",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup
+tate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "image": "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"     },     "time": "last month",     "logo-image": "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg",     "avatar-image": "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg",     "tweets": "120K",     "stats": {
+   "comments": 123,       "retweets": 234,       "likes": 345     }   } )
+WriteResult({ "nInserted" : 1 })
+> db.tweets.find()
+{ "_id" : ObjectId("61a30e131b6728a9af59412d"), "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend
+erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123,
+ "retweets" : 234, "likes" : 345 } }
+> db.tweets.drop()
+true
+> db.tweets.insert({ "topic": "Space",     "userName": "SpaceX",     "verified": false,     "handle": "spacex",     "title": "",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup
+tate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "image": "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"     },     "time": "last month",     "logo-image": "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg",     "avatar-image": "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg",     "tweets": "120K",     "stats": {
+   "comments": 123,       "retweets": 234,       "likes": 345     }   } )^C
+bye
+
+C:\Users\luzix\web-dev-node>mongo
+MongoDB shell version v5.0.5-rc0
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("d9be1000-77af-4d5e-9bb5-a9e6c1db8e44") }
+MongoDB server version: 5.0.5-rc0
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-11-25T14:24:12.082-05:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> use webdev
+switched to db webdev
+> db.tweets.drop()
+false
+> db.tweets.drop()
+false
+> db.collections.show()
+uncaught exception: TypeError: db.collections.show is not a function :
+@(shell):1:1
+> db.collection.show()
+uncaught exception: TypeError: db.collection.show is not a function :
+@(shell):1:1
+> collections show
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:12
+> show tweets
+uncaught exception: Error: don't know how to show [tweets] :
+shellHelper.show@src/mongo/shell/utils.js:1211:11
+shellHelper@src/mongo/shell/utils.js:838:15
+@(shellhelp2):1:1
+> show
+uncaught exception: Error: don't know how to show [] :
+shellHelper.show@src/mongo/shell/utils.js:1211:11
+shellHelper@src/mongo/shell/utils.js:838:15
+@(shellhelp2):1:1
+> db.tweets.find()
+> db.tweets.insert({"liked": false, "topic": "Space",     "userName": "SpaceX",     "verified": false,     "handle": "spacex",     "title": "",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe
+nderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "image": "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"     },     "time": "last month",     "logo-image": "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg",     "avatar-image": "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg",     "tweets": "120K",
+ "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   } )
+WriteResult({ "nInserted" : 1 })
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.movies.find()
+{ "_id" : ObjectId("61a32c0c81fe82747ab3cc30"), "title" : "New Movie", "__v" : 0 }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.updateOne({_id: 61a313757b51544a036c9eb2}, {$set{liked: true}})
+uncaught exception: SyntaxError: identifier starts immediately after numeric literal :
+@(shell):1:26
+> db.tweets.updateOne({_id: "61a313757b51544a036c9eb2"}, {$set{liked: true}})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:60
+> db.tweets.updateOne({"_id": "61a313757b51544a036c9eb2"}, {$set{liked: true}})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:62
+> db.tweets.updateOne({ _id: "61a313757b51544a036c9eb2"}, {$set{liked: true}})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:61
+> db.tweets.updateOne({ _id: "ObjectId("61a313757b51544a036c9eb2")}, {$set{liked: true}})
+uncaught exception: SyntaxError: identifier starts immediately after numeric literal :
+@(shell):1:38
+> db.tweets.updateOne({ _id: "61a313757b51544a036c9eb2"}, {$set{liked: true}})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:61
+> db.movies.find()
+{ "_id" : ObjectId("61a32c0c81fe82747ab3cc30"), "title" : "44412112", "__v" : 0 }
+{ "_id" : ObjectId("61a32c3681fe82747ab401c7"), "title" : "444121", "__v" : 0 }
+> db.tweets.updateOne({ _id: "61a313757b51544a036c9eb2"}, {$set:{liked: true}})
+{ "acknowledged" : true, "matchedCount" : 0, "modifiedCount" : 0 }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.updateOne({ _id: ObjectId("61a313757b51544a036c9eb2")}, {$set:{liked: true}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : true, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do
+lor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "
+comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.updateOne({ _id: ObjectId("61a313757b51544a036c9eb2")}, {$set:{liked: false}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> ^C
+bye
+
+C:\Users\luzix\web-dev-node>mongo
+MongoDB shell version v5.0.5-rc0
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("36111033-bcc5-4b64-9b10-2677445d30e2") }
+MongoDB server version: 5.0.5-rc0
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-11-25T14:24:12.082-05:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> db.tweets.updateOne({ _id: ObjectId("61a313757b51544a036c9eb2")}, {$set:{liked: false}})
+{ "acknowledged" : true, "matchedCount" : 0, "modifiedCount" : 0 }
+> db.tweets.find()
+> use webdev
+switched to db webdev
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : {
+"comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.updateOne({ _id: ObjectId("61a313757b51544a036c9eb2")}, {$set:{liked: true}})
+{ "acknowledged" : true, "matched{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+ dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats"
+: { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.updateOne({ _id: ObjectId("61a313757b51544a036c9eb2")}, {$set:{liked: true}})
+{ "acknowledged" : true, "matched{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : false, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, se
+d do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit e
+sse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/
+2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.updateOne({ _id: ObjectId("61a313757b51544a036c9eb2")}, {$set:{liked: true}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : true, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do
+lor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "
+comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : true, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do
+lor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "
+comments" : 123, "retweets" : 234, "likes" : 345 } }
+> db.tweets.updateOne({ _id: ObjectId("61a313757b51544a036c9eb2")}, {$set:{liked: false}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> ^C
+bye
+
+C:\Users\luzix\web-dev-node>mongo
+MongoDB shell version v5.0.5-rc0
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("db68141e-2a34-45e0-bccf-1f5193a92a71") }
+MongoDB server version: 5.0.5-rc0
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-11-25T14:24:12.082-05:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> use webdev
+switched to db webdev
+> db.who.insert({"avatarIcon": "https://cdn-icons-png.flaticon.com/512/226/226777.png",})
+WriteResult({ "nInserted" : 1 })
+>     "userName": "Java",
+...     "handle": "Java"^C
+
+> db.who.drop()
+true
+> db.who.insert({"avatarIcon": "https://cdn-icons-png.flaticon.com/512/226/226777.png", userName: "Java", handle: "Java"})
+WriteResult({ "nInserted" : 1 })
+> db.who.insert({"avatarIcon": "https://pbs.twimg.com/profile_images/1405603367045324801/CaXrPnKL_400x400.jpg", userName: "Relativity Space", handle: "relativityspace"})
+WriteResult({ "nInserted" : 1 })
+> db.who.insert({"avatarIcon": "https://cdn.worldvectorlogo.com/logos/virgin-1.svg", userName: "Virgin Galactic", handle: "virgingalactic"})
+WriteResult({ "nInserted" : 1 })
+> db.who.insert({"avatarIcon": "https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png", userName: "NASA", handle: "NASA"})
+WriteResult({ "nInserted" : 1 })
+> db.who.insert({"avatarIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/482px-Tesla_T_symbol.svg.png", userName: "Tesla", handle: "Tesla"})
+WriteResult({ "nInserted" : 1 })
+> db.who.find()
+{ "_id" : ObjectId("61a40862e1bdb1420b6e74b9"), "avatarIcon" : "https://cdn-icons-png.flaticon.com/512/226/226777.png", "userName" : "Java", "handle" : "Java" }
+{ "_id" : ObjectId("61a4088be1bdb1420b6e74ba"), "avatarIcon" : "https://pbs.twimg.com/profile_images/1405603367045324801/CaXrPnKL_400x400.jpg", "userName" : "Relativity Space", "handle" : "relativityspace" }
+{ "_id" : ObjectId("61a408b7e1bdb1420b6e74bb"), "avatarIcon" : "https://cdn.worldvectorlogo.com/logos/virgin-1.svg", "userName" : "Virgin Galactic", "handle" : "virgingalactic" }
+{ "_id" : ObjectId("61a408d0e1bdb1420b6e74bc"), "avatarIcon" : "https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png", "userName" : "NASA", "handle" : "NASA" }
+{ "_id" : ObjectId("61a408ece1bdb1420b6e74bd"), "avatarIcon" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/482px-Tesla_T_symbol.svg.png", "userName" : "Tesla", "handle" : "Tesla" }
+> db.who.insert({"avatarIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/482px-Tesla_T_symbol.svg.png", userName: "Test", handle: "Test"})
+WriteResult({ "nInserted" : 1 })
+> db.who.find()
+{ "_id" : ObjectId("61a40862e1bdb1420b6e74b9"), "avatarIcon" : "https://cdn-icons-png.flaticon.com/512/226/226777.png", "userName" : "Java", "handle" : "Java" }
+{ "_id" : ObjectId("61a4088be1bdb1420b6e74ba"), "avatarIcon" : "https://pbs.twimg.com/profile_images/1405603367045324801/CaXrPnKL_400x400.jpg", "userName" : "Relativity Space", "handle" : "relativityspace" }
+{ "_id" : ObjectId("61a408b7e1bdb1420b6e74bb"), "avatarIcon" : "https://cdn.worldvectorlogo.com/logos/virgin-1.svg", "userName" : "Virgin Galactic", "handle" : "virgingalactic" }
+{ "_id" : ObjectId("61a408d0e1bdb1420b6e74bc"), "avatarIcon" : "https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png", "userName" : "NASA", "handle" : "NASA" }
+{ "_id" : ObjectId("61a408ece1bdb1420b6e74bd"), "avatarIcon" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/482px-Tesla_T_symbol.svg.png", "userName" : "Tesla", "handle" : "Tesla" }
+{ "_id" : ObjectId("61a41191e1bdb1420b6e74be"), "avatarIcon" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/482px-Tesla_T_symbol.svg.png", "userName" : "Test", "handle" : "Test" }
+> db.profiles.insert({firstName: "Jose", lastName: "Annunziato", handle: "jannunzi", profilePicture: "jose.png", bannerPicture: "polyglot.png", bio: "Faculty, Software Engineer, AI, Space, and renewable enthusiast Retweets and likes are not endorsements.", website: "youtube.com/webdevtv", coverImage: "https://ares.decipherzone.com/blog-manager/uploads/banner_webp_bea99db8-7dba-41e7-941c-de4b61cc1650.webp", "avatarImage
+": "https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec", "location": "Boston, MA","dateOfBirth": "7/7/1968","dateJoined": "4/2009","followingCount": "312","followersCount": "180","tweets": "5196"})
+WriteResult({ "nInserted" : 1 })
+> db.profiles.find()
+{ "_id" : ObjectId("61a4648ce1bdb1420b6e74bf"), "firstName" : "Jose", "lastName" : "Annunziato", "handle" : "jannunzi", "profilePicture" : "jose.png", "bannerPicture" : "polyglot.png", "bio" : "Faculty, Software Engineer, AI, Space, and renewable enthusiast Retweets and likes are not endorsements.", "website" : "youtube.com/webdevtv", "coverImage" : "https://ares.decipherzone.com/blog-manager/uploads/banner_webp_bea99d
+b8-7dba-41e7-941c-de4b61cc1650.webp", "avatarImage" : "https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec", "location" : "Boston, MA", "dateOfBirth" : "7/7/1968", "dateJoined" : "4/2009", "followingCount" : "312", "followersCount" : "180", "tweets" : "5196" }
+> db.profiles.find().pretty()
+{
+        "_id" : ObjectId("61a4648ce1bdb1420b6e74bf"),
+        "firstName" : "Jose",
+        "lastName" : "Annunziato",
+        "handle" : "jannunzi",
+        "profilePicture" : "jose.png",
+        "bannerPicture" : "polyglot.png",
+        "bio" : "Faculty, Software Engineer, AI, Space, and renewable enthusiast Retweets and likes are not endorsements.",
+        "website" : "youtube.com/webdevtv",
+        "coverImage" : "https://ares.decipherzone.com/blog-manager/uploads/banner_webp_bea99db8-7dba-41e7-941c-de4b61cc1650.webp",
+        "avatarImage" : "https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec",
+        "location" : "Boston, MA",
+        "dateOfBirth" : "7/7/1968",
+        "dateJoined" : "4/2009",
+        "followingCount" : "312",
+        "followersCount" : "180",
+        "tweets" : "5196"
+}
+> db.profiles.drop()
+true
+> db.profiles.insert({firstName: "a9", lastName: "last", handle: "jannunzi", profilePicture: "jose.png", bannerPicture: "polyglot.png", bio: "Faculty, Software Engineer, AI, Space, and renewable enthusiast Retweets and likes are not endorsements.", website: "youtube.com/webdevtv", coverImage: "https://ares.decipherzone.com/blog-manager/uploads/banner_webp_bea99db8-7dba-41e7-941c-de4b61cc1650.webp", "avatarImage": "http
+s://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec", "location": "Boston, MA","dateOfBirth": "7/7/1968","dateJoined": "4/2009","followingCount": "312","followersCount": "180","tweets": "5196"})
+WriteResult({ "nInserted" : 1 })
+> db.profiles.find()
+{ "_id" : ObjectId("61a4685ee1bdb1420b6e74c0"), "firstName" : "a9", "lastName" : "last", "handle" : "jannunzi", "profilePicture" : "jose.png", "bannerPicture" : "polyglot.png", "bio" : "Faculty, Software Engineer, AI, Space, and renewable enthusiast Retweets and likes are not endorsements.", "website" : "youtube.com/webdevtv", "coverImage" : "https://ares.decipherzone.com/blog-manager/uploads/banner_webp_bea99db8-7dba-
+41e7-941c-de4b61cc1650.webp", "avatarImage" : "https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec", "location" : "Boston, MA", "dateOfBirth" : "7/7/1968", "dateJoined" : "4/2009", "followingCount" : "312", "followersCount" : "180", "tweets" : "5196" }
+> use webdev
+switched to db webdev
+> db.tweets.insert({     "_id": ObjectId("61a309a1ea227dfadf3d0c66"),     "topic": "Web Development",     "userName": "ReactJS",     "verified": false,     "handle": "ReactJS",     "time": "2h",     "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci
+didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "video": "unKvMC3Y1kI"     },     "logo-image": "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png",     "avatar-image":
+"https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png",     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }   } )^C
+bye
+
+C:\Users\luzix\web-dev-node>mongo
+MongoDB shell version v5.0.5-rc0
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("e1e32738-ee2f-4e90-8b99-07a6c7f7c04e") }
+MongoDB server version: 5.0.5-rc0
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-11-25T14:24:12.082-05:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> use webdev
+switched to db webdev
+> db.tweets.find()
+{ "_id" : ObjectId("61a313757b51544a036c9eb2"), "liked" : true, "topic" : "Space", "userName" : "SpaceX", "verified" : false, "handle" : "spacex", "title" : "", "tweet" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do
+lor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "attachments" : { "image" : "https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" }, "time" : "last month", "logo-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "avatar-image" : "https://logos-world.net/wp-content/uploads/2020/09/SpaceX-Symbol.jpg", "tweets" : "120K", "stats" : { "
+comments" : 123, "retweets" : 234, "likes" : 346 } }
+{ "_id" : ObjectId("61a5a7f1d0c02073e35953bb"), "userName" : "Web-Dev", "handle" : "webdev", "tweet" : "123456", "logo-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "avatar-image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png", "stats" : { "comments" : 123, "retweets" : 234, "likes" : 346 },
+"__v" : 0, "liked" : true }
+> db.tweets.insert({ "topic": "Web Development",     "userName": "jQuery",     "verified": false,     "handle": "jQuery",     "title": "jQuery",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh
+enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "time": "last week",     "logo-image": "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png",     "avatar-image": "https://miro.medium.com/max/285/1*QR2SBNwG75LyY5uwqWpN3A.png",     "tweets": "122K",     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }, liked: false   })
+WriteResult({ "nInserted" : 1 })
+> db.tweets.insert({    "topic": "Web Development",     "userName": "NodeJS",     "verified": true,     "handle": "NodeJS",     "title": "",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehende
+rit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "time": "last month",     "logo-image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",     "avatar-image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",     "tweets": "120K",     "stats": {       "comments": 123,       "retweets"
+: 234,       "likes": 345     }, liked: false   })
+WriteResult({ "nInserted" : 1 })
+> db.tweets.insert({      "topic": "Web Development",     "userName": "ReactJS",     "verified": false,     "handle": "ReactJS",     "time": "2h",     "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",     "tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",     "attachments": {       "video": "unKvMC3Y1kI"     },     "logo-image": "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png",     "avatar-image": "https://cdn.iconscout.com/icon/free/png-256/rea
+ct-1543566-1306069.png",     "stats": {       "comments": 123,       "retweets": 234,       "likes": 345     }, liked: false   } )
+WriteResult({ "nInserted" : 1 })
+>
