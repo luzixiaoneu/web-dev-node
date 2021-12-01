@@ -1,69 +1,43 @@
-let tweets = require('../data/tweets.json');
-
+const dao = require('../db/tweets/tweet-dao');
 module.exports = (app) => {
 
+
 	const findAllTweets = (req, res) => {
-		res.json(tweets);
+		dao.findAllTweets().then(tweets => res.json(tweets))
 	}
 
-	app.get('/api/tweets', findAllTweets);
+	const createTweet = (req, res) => {
+		console.log(req.body)
+		dao.createTweet(req.body)
+			.then(tweets => res.json(tweets))
+	}
+	const deleteTweet = (req, res) => {
 
-	const postNewTweet = (req, res) => {
-		const newTweet = {
-			_id: (new Date()).getTime() + '',
-			"topic": "Web Development",
-			"userName": "ReactJS",
-			"verified": false,
-			"handle": "ReactJS",
-			"time": "2h",
-			"logo-image": "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png",
-			"avatar-image": "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png",
-			"stats": {
-				"comments": 123,
-				"retweets": 234,
-				"likes": 345
-			},
-			...req.body,
+		dao.deleteTweet(req.params.id)
+			.then((status) => res.send(status));
+	}
+	const likeTweet = (req, res) => {
+
+
+		let tweet = req.body;
+
+		if (tweet.liked === true) {
+			tweet.liked = false;
+			tweet.stats.likes--;
+		} else {
+			tweet.liked = true;
+			tweet.stats.likes++;
 		}
 
 
-		tweets = [
-			newTweet,
-			...tweets
-		];
-		res.json(tweets);
+		dao.updateTweet(req.params['id'], tweet)
+			.then((status) => {
+				res.send(status)
+			})
 	}
 
-	app.post('/api/tweets', postNewTweet);
-
-
-	const deleteTweet = (req, res) => {
-		const id = req.params['id'];
-		tweets = tweets.filter(tweet => tweet._id !== id);
-		res.sendStatus(200);
-	}
-	app.delete('/api/tweets/:id', deleteTweet);
-
-
-	const likeTweet = (req, res) => {
-		const id = req.params['id'];
-		tweets = tweets.map(tweet => {
-			if (tweet._id === id) {
-				if (tweet.liked === true) {
-					tweet.liked = false;
-					tweet.stats.likes--;
-				} else {
-					tweet.liked = true;
-					tweet.stats.likes++;
-				}
-				return tweet;
-			} else {
-				return tweet;
-			}
-		});
-		res.sendStatus(200);
-	}
-	app.put('/api/tweets/:id/like', likeTweet);
-
-
+	app.put('/rest/tweets/:id/like', likeTweet);
+	app.delete('/rest/tweets/:id', deleteTweet);
+	app.post('/rest/tweets', createTweet);
+	app.get('/rest/tweets', findAllTweets);
 };
